@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -38,18 +39,28 @@ public class LoginTests {
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
+		
+		loginPOM.clickSignUp();
+		
 	}
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		driver.quit();
+		//driver.quit();
 	}
 	@Test
 	public void validLoginTest() {
+		
+		String expectation="My Organization - My education - Registration";
+		String actual=driver.getTitle();
+		Assert.assertEquals(expectation, actual);
+		
+
+		/*
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		screenShot.captureScreenShot("First");*/
 	}
 }
