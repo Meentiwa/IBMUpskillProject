@@ -16,9 +16,16 @@ private WebDriver driver;
 	@FindBy(xpath="//*[@id='homepage-course']/div/a")
 	private WebElement courseCatalogBtn; 
 	
+	      
+	@FindBy(xpath="//*[@id='page']/div/div/div/div/div[2]/h4/a")
+	private WebElement courseDescription; 
+	
+	
 	public void clicksCourseCatalogBtn() {
 		this.courseCatalogBtn.click(); 
 	}
 	
-	
+	public void clicksCourseDescription() {
+		this.courseDescription.click(); 
+	}
 }

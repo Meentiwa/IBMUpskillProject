@@ -23,7 +23,7 @@ import com.training.pom.SignUpPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class LoginTests {
+public class ELTC_013_TC002_StundentRegisterToSeleniumCourseTests {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -66,7 +66,7 @@ public class LoginTests {
 		System.out.println("abc");
 		signUpPOM.FollowCourseregisteration("student1", "first", "student1first@gmail.com", "student1first", "student1first@1234", "student1first@1234" );
 		
-	
+	    //wait for sign up submit button
 		WebDriverWait wait =new WebDriverWait(driver,1000);
         
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='registration_submit']")));
