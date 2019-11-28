@@ -17,7 +17,7 @@ private WebDriver driver;
 	private WebElement followCourse; 
 	
 	
-	@FindBy(id="qf_b04447")
+	@FindBy(xpath="//*[@id='qf_2d0bb9']")
 	private WebElement teachCources; 
 	
 	@FindBy(id="registration_firstname")
@@ -44,6 +44,12 @@ private WebDriver driver;
 	@FindBy(linkText="My courses")
 	private WebElement myCources;
 
+	@FindBy(xpath="//*[@id='navbar']/ul[2]/li[2]/a")
+	private WebElement logoutDropDown;
+	
+	
+	@FindBy(id="logout_button")
+	private WebElement logout;
 	
 	public void FollowCourseregisteration(String firstName, String lastName, String eMail, String userName, String pass, String confirmPassword ) {
 		this.firstName.clear();
@@ -67,6 +73,15 @@ private WebDriver driver;
 	}
 	
 	public void clicksTeachCources() {
+
+		if(this.followCourse.isSelected()==true)
+		{
+			System.out.println("followCourse has been selected");
+		}
+		else {
+			System.out.println("followCourse is not selectable");
+		}
+
 		this.teachCources.click(); 
 	}
 	public void clicksregisterBtn() {
@@ -75,6 +90,14 @@ private WebDriver driver;
 	
 	public void clicksMyCourcesBtn() {
 		this.myCources.click(); 
+	}
+	
+	public void clicksLogoutDropDown() {
+		this.logoutDropDown.click(); 
+	}
+	
+	public void clicksLogOut() {
+		this.logout.click(); 
 	}
 	
 	/*public void clickLostPassword() {

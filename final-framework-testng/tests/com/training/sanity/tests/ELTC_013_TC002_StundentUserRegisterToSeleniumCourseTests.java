@@ -23,7 +23,7 @@ import com.training.pom.SignUpPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class ELTC_013_TC002_StundentRegisterToSeleniumCourseTests {
+public class ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -64,7 +64,7 @@ public class ELTC_013_TC002_StundentRegisterToSeleniumCourseTests {
 		
 		//signUpPOM.clickFollowCourse();
 		System.out.println("abc");
-		signUpPOM.FollowCourseregisteration("student1", "first", "student1first@gmail.com", "student1first", "student1first@1234", "student1first@1234" );
+		signUpPOM.FollowCourseregisteration("student2", "second", "student2second@gmail.com", "student2second", "student2second@1234", "student2second@1234" );
 		
 	    //wait for sign up submit button
 		WebDriverWait wait =new WebDriverWait(driver,1000);

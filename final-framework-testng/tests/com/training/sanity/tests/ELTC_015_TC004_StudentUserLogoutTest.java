@@ -22,8 +22,8 @@ import com.training.pom.SignUpPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class ELTC_014_TC003_DisplayCourseDescription {
-
+public class ELTC_015_TC004_StudentUserLogoutTest {
+ 
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
@@ -63,7 +63,7 @@ public class ELTC_014_TC003_DisplayCourseDescription {
 		
 		//signUpPOM.clickFollowCourse();
 		System.out.println("abc");
-		signUpPOM.FollowCourseregisteration("student1", "first", "student1first@gmail.com", "student1first", "student1first@1234", "student1first@1234" );
+		signUpPOM.FollowCourseregisteration("student4", "fourth", "student4fourth@gmail.com", "student4fourth", "student4fourth@1234", "student4fourth@1234" );
 		
 	    //wait for sign up submit button
 		WebDriverWait wait =new WebDriverWait(driver,1000);
@@ -71,8 +71,14 @@ public class ELTC_014_TC003_DisplayCourseDescription {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='registration_submit']")));
 
         signUpPOM.clicksregisterBtn();
-		
-		
+	    //logout the student user
+        signUpPOM.clicksLogoutDropDown();
+        
+        
+         WebDriverWait wait1 =new WebDriverWait(driver,5000);
+        
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("logout_button")));
+        signUpPOM.clicksLogOut();
 	}
 	
 	
@@ -82,21 +88,16 @@ public class ELTC_014_TC003_DisplayCourseDescription {
 		//driver.quit();
 	}
 	@Test
-	public void validLoginTest() {
-		signUpPOM.clicksMyCourcesBtn();
-		myCoursesPOM.clicksCourseCatalogBtn();
-		courseCatalogPOM.enterInSearch("selenium");
-		courseCatalogPOM.clicksSearchBtn();
+	public void validLogoutTest() {
 		
-		//User student1 first (student1first) has been registered to course Automation
-		courseCatalogPOM.clicksSubscribeBtn();
-		//click My course in course catalog page
-		signUpPOM.clicksMyCourcesBtn();
-		//click course description on My Courses page
-		myCoursesPOM.clicksCourseDescription();
+		loginPOM.sendUserName("student4fourth");
+		loginPOM.sendPassword("student4fourth@1234");
+		loginPOM.clickLoginBtn();
+		signUpPOM.clicksLogoutDropDown();
+		signUpPOM.clicksLogOut();
 		
-		
-	}
+		//screenShot.captureScreenShot("First");
+	
+	
 }
-
-
+}
