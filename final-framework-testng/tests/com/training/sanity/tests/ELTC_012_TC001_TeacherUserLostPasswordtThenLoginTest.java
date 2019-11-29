@@ -59,9 +59,9 @@ public class ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest {
 		System.out.println(actual);
 		Assert.assertEquals(expectation, actual);
 		
-		signUpPOM.clicksTeachCources();
+		//signUpPOM.clicksTeachCources();
 		
-		System.out.println("abc");
+		
 		signUpPOM.FollowCourseregisteration("student1", "first", "student1first@gmail.com", "student1first", "student1first@1234", "student1first@1234" );
 		
 	    //wait for sign up submit button
@@ -94,6 +94,10 @@ public class ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest {
 		loginPOM.clickLoginBtn();
 		signUpPOM.clicksLogoutDropDown();
 		signUpPOM.clicksLogOut();
+		signUpPOM.clicksLostPassword();
+		signUpPOM.usernameOrEmail("meentiwa@gmail.com");
+		signUpPOM.clicksSendMessageBtn();
+		
 		
 		//screenShot.captureScreenShot("First");
 	

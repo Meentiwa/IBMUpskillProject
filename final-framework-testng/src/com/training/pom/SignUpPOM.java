@@ -51,6 +51,17 @@ private WebDriver driver;
 	@FindBy(id="logout_button")
 	private WebElement logout;
 	
+	@FindBy(xpath="//*[@id='login-block']/div/ul/li[2]/a")
+	private WebElement lostPassword;
+	
+	@FindBy(id="lost_password_user")
+	private WebElement usernameOrEmail;
+	
+	
+	@FindBy(xpath="//*[@id='lost_password_submit']")
+	private WebElement sendMessageBtn;
+	
+	
 	public void FollowCourseregisteration(String firstName, String lastName, String eMail, String userName, String pass, String confirmPassword ) {
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
@@ -100,6 +111,17 @@ private WebDriver driver;
 		this.logout.click(); 
 	}
 	
+	public void clicksLostPassword() {
+		this.lostPassword.click(); 
+	}
+	
+	public void usernameOrEmail(String email) {
+		this.usernameOrEmail.sendKeys(email);
+	}
+	
+	public void clicksSendMessageBtn() {
+		this.sendMessageBtn.click();; 
+	}
 	/*public void clickLostPassword() {
 		this.lostPassword.click(); 
 	}*/
