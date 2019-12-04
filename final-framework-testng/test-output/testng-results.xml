@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36201" started-at="2019-11-29T11:14:48 IST" finished-at="2019-11-29T11:15:24 IST">
+  <suite name="Default suite" duration-ms="29459" started-at="2019-12-02T00:20:12 IST" finished-at="2019-12-02T00:20:42 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36201" started-at="2019-11-29T11:14:48 IST" finished-at="2019-11-29T11:15:24 IST">
-      <class name="com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest@467aecef]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2019-11-29T11:14:48 IST" finished-at="2019-11-29T11:14:48 IST">
+    <test name="Default test" duration-ms="29459" started-at="2019-12-02T00:20:12 IST" finished-at="2019-12-02T00:20:42 IST">
+      <class name="com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests@467aecef]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-12-02T00:20:12 IST" finished-at="2019-12-02T00:20:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest@467aecef]" name="setUp" is-config="true" duration-ms="27147" started-at="2019-11-29T11:14:48 IST" finished-at="2019-11-29T11:15:15 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests@467aecef]" name="setUp" is-config="true" duration-ms="18530" started-at="2019-12-02T00:20:12 IST" finished-at="2019-12-02T00:20:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLogoutTest()[pri:0, instance:com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest@467aecef]" name="validLogoutTest" duration-ms="7969" started-at="2019-11-29T11:15:15 IST" finished-at="2019-11-29T11:15:23 IST">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests@467aecef]" name="validLoginTest" duration-ms="9876" started-at="2019-12-02T00:20:31 IST" finished-at="2019-12-02T00:20:41 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest@467aecef]" name="tearDown" is-config="true" duration-ms="1017" started-at="2019-11-29T11:15:23 IST" finished-at="2019-11-29T11:15:24 IST">
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests@467aecef]" name="tearDown" is-config="true" duration-ms="1015" started-at="2019-12-02T00:20:41 IST" finished-at="2019-12-02T00:20:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest -->
+      </class> <!-- com.training.sanity.tests.ELTC_013_TC002_StundentUserRegisterToSeleniumCourseTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

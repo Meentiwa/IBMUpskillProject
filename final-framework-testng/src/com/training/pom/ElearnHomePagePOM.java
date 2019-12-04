@@ -36,14 +36,18 @@ private WebDriver driver;
 		
 		this.userName.sendKeys("English");
 	}
-	public void sendUserName(String userName) {
+	public void enterloginCredentials(String adminUserName, String adminPassword) {
 		this.userName.clear();
-		this.userName.sendKeys(userName);
+		this.userName.sendKeys(adminUserName);
+		
+		this.password.clear();
+		this.password.sendKeys(adminPassword);
+		
 	}
 	
-	public void sendPassword(String password) {
-		this.password.clear(); 
-		this.password.sendKeys(password); 
+	
+	public void clickLoginBtn() {
+		this.loginBtn.click(); 
 	}
 	
 	public void clickSignUp() {

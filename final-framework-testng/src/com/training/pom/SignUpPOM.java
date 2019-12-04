@@ -13,11 +13,11 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id='qf_e917c5']")
+	@FindBy(xpath="//*[@id='qf_026c21']")
 	private WebElement followCourse; 
 	
 	
-	@FindBy(xpath="//*[@id='qf_2d0bb9']")
+	@FindBy(xpath="//*[@id='qf_a8cacb']")
 	private WebElement teachCources; 
 	
 	@FindBy(id="registration_firstname")
@@ -61,6 +61,7 @@ private WebDriver driver;
 	@FindBy(xpath="//*[@id='lost_password_submit']")
 	private WebElement sendMessageBtn;
 	
+
 	
 	public void FollowCourseregisteration(String firstName, String lastName, String eMail, String userName, String pass, String confirmPassword ) {
 		this.firstName.clear();
@@ -79,13 +80,16 @@ private WebDriver driver;
 	
 		
 	}
+	
+	
 	public void clickFollowCourse() {
 		this.followCourse.click(); 
 	}
 	
 	public void clicksTeachCources() {
 
-		if(this.followCourse.isSelected()==true)
+		this.teachCources.click(); 
+		if(this.teachCources.isSelected()==true)
 		{
 			System.out.println("followCourse has been selected");
 		}
@@ -93,7 +97,7 @@ private WebDriver driver;
 			System.out.println("followCourse is not selectable");
 		}
 
-		this.teachCources.click(); 
+		
 	}
 	public void clicksregisterBtn() {
 		this.registerBtn.click(); 
@@ -122,8 +126,6 @@ private WebDriver driver;
 	public void clicksSendMessageBtn() {
 		this.sendMessageBtn.click();; 
 	}
-	/*public void clickLostPassword() {
-		this.lostPassword.click(); 
-	}*/
+	
 }
 

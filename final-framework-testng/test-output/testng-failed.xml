@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest">
+      <class name="com.training.sanity.tests.Medium_ELTC_039_TC001_TeacherUserGenerateReportsTest">
         <methods>
-          <include name="validLogoutTest"/>
           <include name="setUpBeforeClass"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="validLoginTest"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.ELTC_012_TC001_TeacherUserLostPasswordtThenLoginTest -->
+      </class> <!-- com.training.sanity.tests.Medium_ELTC_039_TC001_TeacherUserGenerateReportsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
